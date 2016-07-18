@@ -163,7 +163,8 @@ body {
       display: block;
       margin: 0 auto; }
       .sidebar .sidebar-profile img.img-circle {
-        border-radius: 50%; }
+        border-radius: 50%;
+        border: 3px solid #22baa0; }
   .sidebar ul.menu {
     background: #34425A; }
     .sidebar ul.menu.accordion-menu {
@@ -217,5 +218,8 @@ body {
             height: auto;
             content: "\e605";
             font-weight: 300; }
+        .sidebar ul.menu.accordion-menu a p {
+          line-height: 1 !important;
+          margin: 0; }
 
 /*# sourceMappingURL=style.css.map */
