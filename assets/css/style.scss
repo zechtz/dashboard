@@ -1,0 +1,150 @@
+/* ------------------------------------------------------
+ * main styling section
+ * -----------------------------------------------------*/
+body, html{
+  font-family: 'Lato';
+  font-weight: 100;
+  font-style: normal;
+  position: relative;
+}
+body{
+  width: 100%;
+  font-family: 'Open Sans',sans-serif;
+  background: #ccc;
+  color: #4E5E6A;
+}
+/* ------------------------------------------------------
+ * topbar navigation styling section
+ * -----------------------------------------------------*/
+.top-bar{
+  height: 60px;
+  line-height: 60px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: #fff;
+  li{
+    &.name{
+      height: 60px;
+      background: #22baa0;
+      position: relative;
+      width: 160px;
+      display: table;
+      h1{
+        line-height: 60px;
+        font-size: 2rem;
+        a{
+          -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+          color: #fff;
+          font-family: 'Lato';
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  li{
+    &.toggle-topbar{
+      span{
+        font-size: 1.4em;
+      }
+    }
+  }
+  @media only screen and (max-width: 640px){
+    margin-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  &.expanded{
+    margin-top: 0px !important;
+  }
+  &.scrolled{
+    color: #fff;
+    li.name{
+      h1{
+        a{
+          color: #fff;
+        }
+      }
+    }
+    &>.top-bar-section ul li:not(.has-form) a{
+      color: #fff;
+    }
+  }
+}
+.top-bar-section{
+  ul{
+    li{
+      padding: 0 15px;
+      background: #fff;
+      &:not(.has-form){
+        a{
+          -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+          color: #008CBA;
+          &:not(.button){
+            line-height: 60px;
+            position: relative;
+            display: block;
+            font-size: 0.9em;
+            padding: 0;
+            background: #fff;
+            &:hover{
+              background: #fff;
+              color: #f47920;
+              &:after{
+                opacity: 1;
+                -webkit-transform: translateY(-2px);
+                -ms-transform: translateY(-2px);
+                transform: translateY(-2px);
+                top: 95%;
+              }
+            }
+            &:after{
+              position: absolute;
+              top: 100%;
+              left: 0;
+              width: 100%;
+              height: 2px;
+              background: #f47920;
+              content: '';
+              opacity: 0;
+              -webkit-transition: opacity 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+              transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+              -webkit-transform: translateY(5px);
+              -ms-transform: translateY(5px);
+              transform: translateY(5px);
+            } 
+            @media only screen and (max-width: 640px){
+              line-height: 30px;
+              background: rgba(0,0,0, .5);
+              text-align: center;
+              padding: 10px 0;
+            }
+          }
+        }
+      }
+      a{
+        text-transform: normal;
+        &:hover{
+          background: transparent;
+        }
+      }
+      @media only screen and (max-width: 640px){
+        padding: 0;
+      }
+    }
+  }
+}
+.contain-to-grid-sticky{
+  background: #FFF;
+  padding: 0;
+  height: 60px;
+  z-index: 999;
+  border-radius: 0;
+  border: none;
+  margin: auto;
+  -webkit-box-shadow: 0 5px 5px -5px rgba(0,0,0,.1);
+  -moz-box-shadow: 0 5px 5px -5px rgba(0,0,0,.1);
+  box-shadow: 0 5px 5px -5px rgba(0,0,0,.1);
+}
