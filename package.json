@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "test",
+    "prestart": "grunt",
+    "start": "node index",
+    "predev": "grunt",
+    "dev": "npm install && bower install &&  nodemon index & grunt watch"
   },
   "repository": {
     "type": "git",
@@ -19,10 +23,11 @@
   "homepage": "https://github.com/zechtz/dashboard#readme",
   "dependencies": {
     "bower": "^1.7.9",
+    "express": "^4.14.0",
     "grunt": "^1.0.1",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "nodedev": "0.0.1"
+    "nodemon": "^1.9.2"
   }
 }
