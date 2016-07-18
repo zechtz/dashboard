@@ -6,10 +6,23 @@
   <link rel="stylesheet" href="/bower_components/foundation/css/normalize.min.css" media="all" />
   <link rel="stylesheet" href="/bower_components/lato/css/lato.css" media="all" />
   <link rel="stylesheet" href="/bower_components/simple-line-icons/css/simple-line-icons.css" media="all" />
+  <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css" media="all" />
   <link rel="stylesheet" href="/bower_components/foundation/css/foundation.min.css" media="all" />
+  <link rel="stylesheet" href="/css/test.css" media="all" />
   <link rel="stylesheet" href="/css/style.css" media="all" />
 </head>
 <body>
+  <!--search form starts -->
+  <form class="search-form" action="#" method="GET">
+    <div class="input-group">
+      <input type="text" name="search" class="form-control search-input" placeholder="Search...">
+      <span class="input-group-btn">
+        <button class="btn btn-default close-search waves-effect waves-button waves-classic" type="button"><i class="fa fa-times"></i></button>
+      </span>
+    </div><!-- Input Group -->
+  </form>
+  <!--search form ends -->
+
   <!--top toolbar-->
   <div class="contain-to-grid-sticky fixed">
     <nav class="top-bar" data-topbar role="navigation">
@@ -20,14 +33,99 @@
         <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
       </ul>
       <section class="top-bar-section">
-        <ul class="right">
+        <ul class="left">
+          <li>		
+            <a href="#" class="waves-effect waves-button waves-classic sidebar-toggle"><i class="fa fa-bars"></i></a>
+          </li>
           <li>
-            <li><a href="#">First link in dropdown</a></li>
+            <a href="#cd-nav" class="waves-effect waves-button waves-classic cd-nav-trigger"><i class="fa fa-diamond"></i></a>
+          </li>
+          <li>		
+            <a href="#" class="waves-effect waves-button waves-classic toggle-fullscreen"><i class="fa fa-expand"></i></a>
+          </li>
+          <li>
+            <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic" >
+              <i class="fa fa-cogs"></i>
+            </a>
           </li>
         </ul>
-      </section>
-    </nav>
-  </div>
+        <ul class="right">
+          <li><a href="#" class="show-search"><i class="fa fa-search"></i></a></li>
+          <li class="has-dropdown">
+            <a href="#"><i class="fa fa-envelope"></i><span class="badge badge-success pull-right">4</span></a>
+            <ul class="dropdown drop-container">
+              <li><p class="title">You have 4 new  messages !</p></li>
+              <li class="sender-details">
+                <ul class="unstyled">
+                  <li>
+                    <a href="#">
+                      <div class="msg-img"><div class="online on"></div><img class="img-circle" src="../images/zach2.jpg" alt=""></div>
+                        <p class="msg-name">Sandra Smith</p>
+                        <p class="msg-text">Hey ! I'm working on your project</p>
+                        <p class="msg-time">3 minutes ago</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="msg-img"><div class="online on"></div><img class="img-circle" src="../images/zach2.jpg" alt=""></div>
+                          <p class="msg-name">Sandra Smith</p>
+                          <p class="msg-text">Hey ! I'm working on your project</p>
+                          <p class="msg-time">3 minutes ago</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="msg-img"><div class="online on"></div><img class="img-circle" src="../images/zach2.jpg" alt=""></div>
+                            <p class="msg-name">Sandra Smith</p>
+                            <p class="msg-text">Hey ! I'm working on your project</p>
+                            <p class="msg-time">3 minutes ago</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="msg-img"><div class="online on"></div><img class="img-circle" src="../images/zach2.jpg" alt=""></div>
+                              <p class="msg-name">Sandra Smith</p>
+                              <p class="msg-text">Hey ! I'm working on your project</p>
+                              <p class="msg-time">3 minutes ago</p>
+                            </a>
+                          </li><li>
+                        <a href="#">
+                          <div class="msg-img"><div class="online on"></div><img class="img-circle" src="../images/zach2.jpg" alt=""></div>
+                            <p class="msg-name">Sandra Smith</p>
+                            <p class="msg-text">Hey ! I'm working on your project</p>
+                            <p class="msg-time">3 minutes ago</p>
+                          </a>
+                        </li><li>
+                        <a href="#">
+                          <div class="msg-img"><div class="online on"></div><img class="img-circle" src="../images/zach2.jpg" alt=""></div>
+                            <p class="msg-name">Sandra Smith</p>
+                            <p class="msg-text">Hey ! I'm working on your project</p>
+                            <p class="msg-time">3 minutes ago</p>
+                          </a>
+                        </li><li>
+                        <a href="#">
+                          <div class="msg-img"><div class="online on"></div><img class="img-circle" src="../images/zach2.jpg" alt=""></div>
+                            <p class="msg-name">Sandra Smith</p>
+                            <p class="msg-text">Hey ! I'm working on your project</p>
+                            <p class="msg-time">3 minutes ago</p>
+                          </a>
+                        </li>
+                    </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#"><i class="fa fa-bell"></i><span class="badge badge-success pull-right">4</span></a></li>
+          <li>
+            <a href="#" data-toggle="dropdown">
+              <span class="user-name">Zach<i class="fa fa-angle-down"></i></span>
+              <img class="img-circle avatar" src="../images/zach2.jpg" width="40" height="40" alt="">
+              </a>
+            </li>
+            <li> <a href="#" class="log-out"> <span><i class="fa fa-sign-out m-r-xs"></i>Log Out</span> </a> </li>
+          </ul>
+        </section>
+      </nav>
+    </div>
   <!--top toolbar ends -->
 
   <!--section sidebar-->
@@ -186,10 +284,210 @@
         </div><div class="slimScrollBar" style="width: 7px; position: absolute; top: 0px; opacity: 0.3; display: none; border-radius: 0px; z-index: 99; right: 0px; height: 1080px; background: rgb(204, 204, 204);"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 0px; opacity: 0.2; z-index: 90; right: 0px; background: rgb(51, 51, 51);"></div></div>
   </section>
   <!--section sidebar ends -->
+
+  <!--section main starts -->
+  <div class="page-inner" style="min-height:1080px !important">
+    <div class="page-title">
+      <h3>Dashboard</h3>
+      <div class="page-breadcrumb">
+        <nav class="breadcrumbs" role="menubar" aria-label="breadcrumbs">
+          <li role="menuitem"><a href="#">Home</a></li>
+          <li role="menuitem"><a href="#">Dashboard</a></li>
+        </nav>
+      </div>
+    </div>
+    <div id="main-wrapper">
+      <div class="row">
+        <div class="large-3 medium-6 columns">
+          <div class="panel info-box panel-white">
+            <div class="panel-body">
+              <div class="info-box-stats">
+                <p class="counter">107,200</p>
+                <span class="info-box-title">User activity this month</span>
+              </div>
+              <div class="info-box-icon">
+                <i class="icon-people"></i>
+              </div>
+              <div class="info-box-progress">
+                <div class="progress progress-xs progress-squared bs-n">
+                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="large-3 medium-6 columns">
+          <div class="panel info-box panel-white">
+            <div class="panel-body">
+              <div class="info-box-stats">
+                <p class="counter">340,230</p>
+                <span class="info-box-title">Page views</span>
+              </div>
+              <div class="info-box-icon">
+                <i class="icon-eye"></i>
+              </div>
+              <div class="info-box-progress">
+                <div class="progress progress-xs progress-squared bs-n">
+                  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="large-3 medium-6 columns">
+          <div class="panel info-box panel-white">
+            <div class="panel-body">
+              <div class="info-box-stats">
+                <p>$<span class="counter">653,000</span></p>
+                <span class="info-box-title">Monthly revenue goal</span>
+              </div>
+              <div class="info-box-icon">
+                <i class="icon-basket"></i>
+              </div>
+              <div class="info-box-progress">
+                <div class="progress progress-xs progress-squared bs-n">
+                  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="large-3 medium-6 columns">
+          <div class="panel info-box panel-white">
+            <div class="panel-body">
+              <div class="info-box-stats">
+                <p class="counter">47,500</p>
+                <span class="info-box-title">New emails recieved</span>
+              </div>
+              <div class="info-box-icon">
+                <i class="icon-envelope"></i>
+              </div>
+              <div class="info-box-progress">
+                <div class="progress progress-xs progress-squared bs-n">
+                  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                  </div>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div><!-- Row -->
+      <div class="row">
+        <div class="large-12 medium-12 columns">
+          <div class="panel panel-white">
+            <div class="panel-heading">
+              <h4 class="panel-title">Project Stats</h4>
+            </div>
+            <div class="panel-body">
+              <div class="table-responsive project-stats">  
+                <table style="width: 100%">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Project</th>
+                      <th>Status</th>
+                      <th>Manager</th>
+                      <th>Progress</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">452</th>
+                      <td>Mailbox Template</td>
+                      <td><span class="label label-info">Pending</span></td>
+                      <td>David Green</td>
+                      <td>
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            Action <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">327</th>
+                      <td>Wordpress Theme</td>
+                      <td><span class="label label-primary">In Progress</span></td>
+                      <td>Sandra Smith</td>
+                      <td>
+                        <div class="progress progress-sm">
+                          <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">226</th>
+                      <td>Modern Admin Template</td>
+                      <td><span class="label label-success">Finished</span></td>
+                      <td>Chritopher Palmer</td>
+                      <td>
+                        <div class="progress progress-sm">
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">178</th>
+                      <td>eCommerce template</td>
+                      <td><span class="label label-danger">Canceled</span></td>
+                      <td>Amily Lee</td>
+                      <td>
+                        <div class="progress progress-sm">
+                          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">157</th>
+                      <td>Website PSD</td>
+                      <td><span class="label label-info">Testing</span></td>
+                      <td>Nick Doe</td>
+                      <td>
+                        <div class="progress progress-sm">
+                          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">157</th>
+                      <td>Fronted Theme</td>
+                      <td><span class="label label-warning">Waiting</span></td>
+                      <td>David Green</td>
+                      <td>
+                        <div class="progress progress-sm">
+                          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- Main Wrapper -->
+  </div>
+  <!--section main ends -->
 <script src="bower_components/foundation/js/vendor/modernizr.js"></script>
 <script src="bower_components/foundation/js/vendor/jquery.js"></script>
 <script src="bower_components/foundation/js/foundation.min.js"></script>
 <script src="bower_components/foundation/js/foundation/foundation.alert.js"></script>
+<script src="js/search.js"></script>
 <script>
   $(document).foundation();
 </script>

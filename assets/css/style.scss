@@ -16,6 +16,21 @@ body{
     text-align: center;
   }
 }
+.row{
+  max-width: 100%;
+}
+.breadcrumbs{
+  display: block;
+  list-style: none;
+  margin-left: 0;
+  padding: .5625rem .875rem;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0;
+  &>*{
+    font-size: 13px;
+  }
+}
 /* ------------------------------------------------------
  * topbar navigation styling section
  * -----------------------------------------------------*/
@@ -94,30 +109,8 @@ body{
             background: #fff;
             &:hover{
               background: #fff;
-              color: #f47920;
-              &:after{
-                opacity: 1;
-                -webkit-transform: translateY(-2px);
-                -ms-transform: translateY(-2px);
-                transform: translateY(-2px);
-                top: 95%;
-              }
+              color: #000;
             }
-            &:after{
-              position: absolute;
-              top: 100%;
-              left: 0;
-              width: 100%;
-              height: 2px;
-              background: #f47920;
-              content: '';
-              opacity: 0;
-              -webkit-transition: opacity 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
-              transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
-              -webkit-transform: translateY(5px);
-              -ms-transform: translateY(5px);
-              transform: translateY(5px);
-            } 
             @media only screen and (max-width: 640px){
               line-height: 30px;
               background: rgba(0,0,0, .5);
@@ -137,6 +130,105 @@ body{
         padding: 0;
       }
     }
+    .dropdown{
+      right: 50px !important;
+      top: 60px;
+      p{
+        &.title{
+          display: block;
+          border-bottom: 1px solid #F3F3F3;
+          font-size: 14px;
+          background: #fff;
+          padding: 12px;
+          color: #6a6a6a;
+          margin: 0;
+        }
+      }
+      li{
+        font-size: 13px;
+        &.sender-details{
+          overflow: hidden;
+          width: auto;
+          height: 100%;
+          max-height: 300px;
+          li{
+            border-bottom: 1px solid #f3f3f3;
+            a{
+              color: #bababa;
+              font-size: 13px;
+              padding-left: 15px;
+              text-decoration: none;
+              display: block;
+              padding-top: 8px;
+              padding-bottom: 8px;
+              position: relative;
+              background: transparent !important;
+              img{
+                width: 40px;
+                height: 40px;
+                &.img-circle{
+                  border-radius: 50%;
+                }
+              }
+              .msg-img{
+                height: 100%;
+                display: block;
+                float: left;
+                position: relative;
+              }
+              .online{
+                position: absolute;
+                top: 1px;
+                right: 1px;
+                display: block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: 2px solid #FFF;
+                background: #ccc;
+                &.on{
+                  background: #44AEA1;
+                }
+              }
+              .msg-name{
+                display: block;
+                font-size: 14px;
+                color: #707070;
+                padding: 0 0 0 10px;
+                margin: 0;
+                float: left;
+                white-space: normal;
+                line-height: 22px;
+                letter-spacing: normal;
+              }
+              .msg-text{
+                overflow: hidden;
+                display: block;
+                width: 210px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                color: #a0a0a0;
+                margin: 0;
+                float: right;
+                padding: 0 0 0 10px;
+                font-size: 14px;
+              }
+              .msg-time{
+                font-size: 11px;
+                display: block;
+                width: 210px;
+                padding: 0 4px 0 8px;
+                margin: 0;
+                float: right;
+              }
+            }
+            &:hover{
+              background: #f7f7f7 !important;
+            }
+          }
+        }
+      }
+    }
   }
 }
 .contain-to-grid-sticky{
@@ -150,6 +242,64 @@ body{
   -webkit-box-shadow: 0 5px 5px -5px rgba(0,0,0,.1);
   -moz-box-shadow: 0 5px 5px -5px rgba(0,0,0,.1);
   box-shadow: 0 5px 5px -5px rgba(0,0,0,.1);
+}
+
+/* ------------------------------------------------------
+ * search form styling section
+ * -----------------------------------------------------*/
+.search-form {
+    display: block;
+    width: 100%;
+    height: 60px;
+    z-index: 99999;
+    position: fixed;
+    background: #fff;
+    margin-top: -120px;
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    .input-group{
+      input{
+        color: #5f5f5f;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        background: 0 0;
+        height: 60px;
+        line-height: 60px;
+        font-size: 16px;
+        padding: 0 20px!important;
+      }
+      button{
+        background: 0 0;
+        box-shadow: none;
+        border: none;
+        outline: 0;
+        color: #5f5f5f;
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 46px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        &:focus{
+          @extend button;
+        }
+        &:hover{
+          @extend button;
+        }
+      }
+    }
+}
+
+input.form-control.input-rounded {
+  border-radius: 30px
+}
+.input-group .btn {
+  padding: 7px 12px;
 }
 
 /* ------------------------------------------------------
@@ -266,8 +416,8 @@ body{
                 width: 10px;
                 position: absolute;
                 display: block;
-                top: 62px;
-                right: -50px;
+                top: -30px;
+                right: -60px;
                 font-size: 12px;
                 font-family: 'simple-line-icons';
                 height: auto;
