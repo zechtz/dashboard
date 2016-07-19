@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Admin Dashboard</title>
   <link rel="stylesheet" href="/bower_components/foundation/css/normalize.min.css" media="all" />
   <link rel="stylesheet" href="/bower_components/lato/css/lato.css" media="all" />
@@ -129,8 +131,9 @@
 
   <!--content section container starts -->
   <div class="content-section-container" data-equalizer>
+    <div class="row collapse">
     <!--section sidebar-->
-    <section class="section-sidebar sidebar" data-equalizer-watch>
+    <section class="section-sidebar sidebar large-3 small-12 columns" data-equalizer-watch>
       <div style="position: relative; overflow: hidden; width: auto; height: 100%;">
         <div class="page-sidebar-inner slimscroll" style="overflow: hidden; width: auto; height: 100%;">
           <div class="sidebar-header">
@@ -287,7 +290,7 @@
     <!--section sidebar ends -->
     
     <!--section main starts -->
-    <div class="page-inner" data-equalizer-watch>
+    <div class="page-inner large-9 small-12 columns" data-equalizer-watch>
       <div class="page-title">
         <h3>Dashboard</h3>
         <div class="page-breadcrumb">
@@ -299,7 +302,7 @@
       </div>
       <div id="main-wrapper">
         <div class="row">
-          <div class="large-3 medium-6 columns">
+          <div class="large-3 medium-12 small-12 columns">
             <div class="panel info-box panel-white">
               <div class="panel-body">
                 <div class="info-box-stats">
@@ -317,7 +320,7 @@
               </div>
             </div>
           </div>
-          <div class="large-3 medium-6 columns">
+          <div class="large-3 medium-12 small-12 columns">
             <div class="panel info-box panel-white">
               <div class="panel-body">
                 <div class="info-box-stats">
@@ -335,7 +338,7 @@
               </div>
             </div>
           </div>
-          <div class="large-3 medium-6 columns">
+          <div class="large-3 medium-12 small-12 columns">
             <div class="panel info-box panel-white">
               <div class="panel-body">
                 <div class="info-box-stats">
@@ -353,7 +356,7 @@
               </div>
             </div>
           </div>
-          <div class="large-3 medium-6 columns">
+          <div class="large-3 medium-12 small-12 columns">
             <div class="panel info-box panel-white">
               <div class="panel-body">
                 <div class="info-box-stats">
@@ -477,6 +480,8 @@
       </div><!-- Main Wrapper -->
     </div>
     <!--section main ends -->
+  
+    </div>
   </div>
   <!--content section container ends -->
 <script src="bower_components/foundation/js/vendor/modernizr.js"></script>

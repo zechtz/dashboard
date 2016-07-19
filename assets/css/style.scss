@@ -340,6 +340,10 @@ input.form-control.input-rounded {
   float: left;
   height: auto!important;
   overflow: visible!important;
+  @media only screen and (max-width: 768px){
+    width: 100%;
+    z-index: 0;
+  }
 }
 .sidebar{
   background: #34425A;
@@ -461,6 +465,9 @@ input.form-control.input-rounded {
         margin: 0;
       }
     }
+    @media only screen and (max-width: 768px){
+      width: 100%;
+    }
   }
 }
 /* ------------------------------------------------------
@@ -503,10 +510,17 @@ input.form-control.input-rounded {
     background: #F1F4F9;
     position: relative;
     overflow: hidden;
+    width: 89.8%;
+    @media only screen and (max-width: 768px){
+      width: 100%;
+    }
 }
 #main-wrapper {
     margin: 20px;
-    padding: 0
+    padding: 0;
+    @media only screen and (max-width: 768px){
+      margin: 10px;
+    }
 }
 .panel{
   -webkit-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .1);

@@ -6,6 +6,7 @@ To test this one out, you need nodejs installed in your computer or you can just
 
 - `git clone github.com:zechtz/dashboard.git`
 - `cd dashboard`
+- install grunt `npm install -g grunt-cli`
 - `npm run dev` 
 - open your browser and visit `http://localhost:3000`
 

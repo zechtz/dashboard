@@ -273,6 +273,10 @@ input.form-control.input-rounded {
   float: left;
   height: auto !important;
   overflow: visible !important; }
+  @media only screen and (max-width: 768px) {
+    .section-sidebar {
+      width: 100%;
+      z-index: 0; } }
 
 .sidebar {
   background: #34425A; }
@@ -368,6 +372,9 @@ input.form-control.input-rounded {
       .menu.accordion-menu a p {
         line-height: 1 !important;
         margin: 0; }
+    @media only screen and (max-width: 768px) {
+      .menu.accordion-menu {
+        width: 100%; } }
 
 /* ------------------------------------------------------
  * page title styling
@@ -403,11 +410,18 @@ input.form-control.input-rounded {
   padding: 0 0 50px;
   background: #F1F4F9;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 89.8%; }
+  @media only screen and (max-width: 768px) {
+    .page-inner {
+      width: 100%; } }
 
 #main-wrapper {
   margin: 20px;
   padding: 0; }
+  @media only screen and (max-width: 768px) {
+    #main-wrapper {
+      margin: 10px; } }
 
 .panel {
   -webkit-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
