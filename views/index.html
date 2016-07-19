@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="/bower_components/simple-line-icons/css/simple-line-icons.css" media="all" />
   <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css" media="all" />
   <link rel="stylesheet" href="/bower_components/foundation/css/foundation.min.css" media="all" />
-  <link rel="stylesheet" href="/css/test.css" media="all" />
   <link rel="stylesheet" href="/css/style.css" media="all" />
 </head>
 <body>
@@ -141,7 +140,7 @@
                   <img src="../images/zach2.jpg" class="img-circle img-responsive" alt="">
                   </div>
                   <div class="sidebar-profile-details">
-                    <span>Zach<br><small>Art Director</small></span>
+                    <span>Mtabe<br><small>Admin</small></span>
                   </div>
                 </a>
               </div>
@@ -311,9 +310,8 @@
                   <i class="icon-people"></i>
                 </div>
                 <div class="info-box-progress">
-                  <div class="progress progress-xs progress-squared bs-n">
-                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                    </div>
+                  <div class="progress large-12 success radius round">
+                    <span class="meter" style="width: 80%"></span>
                   </div>
                 </div>
               </div>
@@ -330,9 +328,8 @@
                   <i class="icon-eye"></i>
                 </div>
                 <div class="info-box-progress">
-                  <div class="progress progress-xs progress-squared bs-n">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                    </div>
+                  <div class="progress large-12 danger radius round">
+                    <span class="meter" style="width: 30%"></span>
                   </div>
                 </div>
               </div>
@@ -349,9 +346,8 @@
                   <i class="icon-basket"></i>
                 </div>
                 <div class="info-box-progress">
-                  <div class="progress progress-xs progress-squared bs-n">
-                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                    </div>
+                  <div class="progress large-12 warning radius round">
+                    <span class="meter" style="width: 60%"></span>
                   </div>
                 </div>
               </div>
@@ -368,9 +364,8 @@
                   <i class="icon-envelope"></i>
                 </div>
                 <div class="info-box-progress">
-                  <div class="progress progress-xs progress-squared bs-n">
-                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                    </div>
+                  <div class="progress large-12 warning radius round">
+                    <span class="meter" style="width: 95%"></span>
                   </div>
                 </div>
               </div>            
@@ -402,17 +397,14 @@
                         <td><span class="label label-info">Pending</span></td>
                         <td>David Green</td>
                         <td>
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                              Action <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" role="menu">
-                              <li><a href="#">Action</a></li>
-                              <li><a href="#">Another action</a></li>
-                              <li class="divider"></li>
-                              <li><a href="#">Separated link</a></li>
-                            </ul>
-                          </div>
+                          <a class="button" data-dropdown="autoCloseExample" aria-controls="autoCloseExample"
+                              aria-expanded="false">Action &raquo;</a>
+                          <ul id="autoCloseExample" class="f-dropdown" data-dropdown-content tabindex="-1" aria-hidden="true" aria-autoclose="false" tabindex="-1">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another Action</a></li>
+                            <li><a href="#">Yet another</a></li>
+                          </ul>
+                          
                         </td>
                       </tr>
                       <tr>
