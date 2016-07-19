@@ -1,4 +1,8 @@
 /* ------------------------------------------------------
+ * sass variables  
+ * ----------------------------------------------------*/
+ $light-green: #22baa0;
+/* ------------------------------------------------------
  * main styling section
  * -----------------------------------------------------*/
 body, html{
@@ -41,10 +45,11 @@ p{
   li{
     &.name{
       height: 60px;
-      background: #22baa0;
+      background: $light-green; 
       position: relative;
       width: 160px;
       display: table;
+
       h1{
         line-height: 60px;
         font-size: 2rem;
@@ -240,7 +245,7 @@ p{
     vertical-align: middle;
     position: relative;
     &.badge-success{
-      background: #22BAA0;
+      background: $light-green;
       color: #FFF;
       position: absolute;
       top: 8px;
@@ -510,7 +515,6 @@ input.form-control.input-rounded {
     background: #F1F4F9;
     position: relative;
     overflow: hidden;
-    width: 89.8%;
     @media only screen and (max-width: 768px){
       width: 100%;
     }

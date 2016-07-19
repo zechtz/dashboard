@@ -1,0 +1,10 @@
+node_modules/ 
+.sass-cache/ 
+.vimrc 
+assets/css/*.map
+assets/bower_components 
+assets/css/.sass-cache 
+*.log 
+*.log.*
+assets/css/test.css
+assets/js/test.js 

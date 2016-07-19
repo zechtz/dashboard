@@ -1,4 +1,7 @@
 /* ------------------------------------------------------
+ * sass variables  
+ * ----------------------------------------------------*/
+/* ------------------------------------------------------
  * main styling section
  * -----------------------------------------------------*/
 body, html {
@@ -188,7 +191,7 @@ p {
   vertical-align: middle;
   position: relative; }
   .top-bar-section .badge.badge-success {
-    background: #22BAA0;
+    background: #22baa0;
     color: #FFF;
     position: absolute;
     top: 8px; }
@@ -410,8 +413,7 @@ input.form-control.input-rounded {
   padding: 0 0 50px;
   background: #F1F4F9;
   position: relative;
-  overflow: hidden;
-  width: 89.8%; }
+  overflow: hidden; }
   @media only screen and (max-width: 768px) {
     .page-inner {
       width: 100%; } }
