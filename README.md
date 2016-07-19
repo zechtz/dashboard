@@ -10,7 +10,7 @@ To test this one out, you need nodejs installed in your computer or you can just
 - open your browser and visit `http://localhost:3000`
 
 ## Screenshot
-![Screenshot]('assets/images/dashoard.png')
+![Screenshot](assets/images/dashoard.png)
 
 ## Contributing
 
