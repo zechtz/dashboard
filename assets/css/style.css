@@ -44,7 +44,7 @@ p {
     height: 60px;
     background: #22baa0;
     position: relative;
-    width: 160px;
+    width: 264px;
     display: table; }
     .top-bar li.name h1 {
       line-height: 60px;
@@ -219,6 +219,19 @@ p {
   -moz-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1); }
 
+.title-container {
+  background: #22baa0; }
+
+.top-bar.expanded .title-area {
+  background: transparent; }
+.top-bar.expanded .top-bar-section ul li:not(.has-form) a:not(.button) {
+  background: #000;
+  color: #22baa0; }
+  .top-bar.expanded .top-bar-section ul li:not(.has-form) a:not(.button):hover {
+    background: #fff; }
+.top-bar.expanded .toggle-topbar a span::after {
+  box-shadow: 0 0 0 1px #fff,0 7px 0 1px #fff,0 14px 0 1px #fff; }
+
 /* ------------------------------------------------------
  * search form styling section
  * -----------------------------------------------------*/
@@ -270,7 +283,6 @@ input.form-control.input-rounded {
  * -----------------------------------------------------*/
 .section-sidebar {
   /*padding-top: 60px;*/
-  width: 160px;
   display: block;
   z-index: 998;
   float: left;
@@ -324,7 +336,6 @@ input.form-control.input-rounded {
   .menu.accordion-menu {
     padding: 0;
     margin: 0;
-    width: 160px;
     color: #fff;
     position: relative;
     display: block; }
